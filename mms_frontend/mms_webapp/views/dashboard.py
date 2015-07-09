@@ -1,4 +1,4 @@
 from django.views.generic import TemplateView
 
 class DashboardView(TemplateView):
-    template_name = 'adm/demo.html'
+    template_name = 'adm/base.html'
