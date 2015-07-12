@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from mms_webapp.views.dashboard import *
+from mms_webapp.views import *
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^adm/', DashboardView.as_view()),
+    url(r'^dashboard/', DashboardView.as_view()),
+    url(r'^login/', LoginView.as_view()),
 ]
